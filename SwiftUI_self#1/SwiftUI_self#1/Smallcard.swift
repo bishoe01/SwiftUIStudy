@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SmallCard : View {
     var body: some View{
-        HStack{
-            
+        HStack(spacing:15){
             Image(systemName: "flame.fill")
                 .font(.system(size: 55))
+                .foregroundColor(.white)
                 .padding(.leading,20)
             VStack(alignment: .leading, spacing: 0){
                 
-                Text("유튜브 라이브 버닝")
+                Text("일찍 일어나기")
                     .font(.system(size: 30))
                     .fontWeight(.black)
                     .foregroundColor(.white)
@@ -24,15 +24,16 @@ struct SmallCard : View {
                     
                 Text("8PM - 10PM")
                     .font(.system(size: 20))
+                    .fontWeight(.thin)
+                    .foregroundColor(.white)
                     .padding(.bottom,5)
-
             }
             Spacer()
         }
         .frame(width: 400, height: 100)
         .background(Color.purple)
         .cornerRadius(20)
-        .padding()
+        .padding(.top,5)
             
     }
 }

@@ -29,7 +29,6 @@ struct CategoryView : View {
                         Circle()
                             .stroke(lineWidth : 5)
                             .foregroundColor(Color.blue)
-                            
                     )
                 Image("new2")
                     .resizable()
@@ -48,16 +47,11 @@ struct CategoryView : View {
                     .frame(width: 70)
                     .background(Color.blue)
                     .cornerRadius(20)
-                    
-                    
             }
-           
         }
         .padding(30)
         .background(Color.yellow)
         .cornerRadius(20)
-        
-            
         
     }
 }
