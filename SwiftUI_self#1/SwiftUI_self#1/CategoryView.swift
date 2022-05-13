@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CategoryView : View {
+    
+    @State var showAlert : Bool = false
+    @State var profileCheck : Bool = false
+    
     var body: some View{
         
         VStack(alignment: .leading, spacing: 0){
@@ -30,23 +34,44 @@ struct CategoryView : View {
                             .stroke(lineWidth : 5)
                             .foregroundColor(Color.blue)
                     )
-                Image("new2")
-                    .resizable()
-                    .frame(width: 50,height: 50)
-                    .clipShape(Circle())
+                Button(action: {
+                    print("profile Clicked")
+                    self.profileCheck = true
+                    
+                }){
+                    Image("new2")
+                        .resizable()
+                        .frame(width: 50,height: 50)
+                        .clipShape(Circle())
+                }
+                
+                
                 Image("new3")
                     .resizable()
                     .frame(width: 50,height: 50)
                     .clipShape(Circle())
                 
                 Spacer()
-                Text("확인")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(width: 70)
-                    .background(Color.blue)
-                    .cornerRadius(20)
+                
+                //버튼 기능
+                Button(action: {
+                    print("Button Clicked")
+                    
+                    self.showAlert = true
+                    
+                }){
+                    Text("Btn")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 70)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }.alert(isPresented: $showAlert){
+                    Alert(title : Text("알림창입니다 !"))
+                }
+                
+                
             }
         }
         .padding(30)
@@ -61,3 +86,6 @@ struct Category_Previews: PreviewProvider {
         CategoryView()
     }
 }
+
+//버튼 action에 대한 숙지가필요
+//예시 ) 버튼 눌렀을 때 원하는 액션하는 방법

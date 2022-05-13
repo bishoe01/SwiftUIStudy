@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF16C3E4282D65B600D56856 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16C3E3282D65B600D56856 /* MyCard.swift */; };
 		FF282346282BFD8E000631EF /* SwiftUI_self_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF282345282BFD8E000631EF /* SwiftUI_self_1App.swift */; };
 		FF282348282BFD8E000631EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF282347282BFD8E000631EF /* ContentView.swift */; };
 		FF28234A282BFD8F000631EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF282349282BFD8F000631EF /* Assets.xcassets */; };
 		FF28234D282BFD8F000631EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF28234C282BFD8F000631EF /* Preview Assets.xcassets */; };
 		FF282354282BFDB4000631EF /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF282353282BFDB4000631EF /* CategoryView.swift */; };
 		FF282356282C0427000631EF /* Smallcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF282355282C0427000631EF /* Smallcard.swift */; };
+		FFB37EEF282EB02B00CE6210 /* myList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB37EEE282EB02B00CE6210 /* myList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF16C3E3282D65B600D56856 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		FF282342282BFD8E000631EF /* SwiftUI_self#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI_self#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF282345282BFD8E000631EF /* SwiftUI_self_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_self_1App.swift; sourceTree = "<group>"; };
 		FF282347282BFD8E000631EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		FF28234C282BFD8F000631EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF282353282BFDB4000631EF /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		FF282355282C0427000631EF /* Smallcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smallcard.swift; sourceTree = "<group>"; };
+		FFB37EEE282EB02B00CE6210 /* myList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		FF282344282BFD8E000631EF /* SwiftUI_self#1 */ = {
 			isa = PBXGroup;
 			children = (
+				FFB37EEE282EB02B00CE6210 /* myList.swift */,
 				FF282345282BFD8E000631EF /* SwiftUI_self_1App.swift */,
 				FF282347282BFD8E000631EF /* ContentView.swift */,
 				FF282349282BFD8F000631EF /* Assets.xcassets */,
 				FF28234B282BFD8F000631EF /* Preview Content */,
 				FF282353282BFDB4000631EF /* CategoryView.swift */,
 				FF282355282C0427000631EF /* Smallcard.swift */,
+				FF16C3E3282D65B600D56856 /* MyCard.swift */,
 			);
 			path = "SwiftUI_self#1";
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 				FF282348282BFD8E000631EF /* ContentView.swift in Sources */,
 				FF282356282C0427000631EF /* Smallcard.swift in Sources */,
 				FF282346282BFD8E000631EF /* SwiftUI_self_1App.swift in Sources */,
+				FFB37EEF282EB02B00CE6210 /* myList.swift in Sources */,
+				FF16C3E4282D65B600D56856 /* MyCard.swift in Sources */,
 				FF282354282BFDB4000631EF /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
